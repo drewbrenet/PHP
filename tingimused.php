@@ -17,3 +17,20 @@ if ($vanus >= 0 and $vanus < 11) {
     echo 'Oled seenior, kes on '.$vanus.'aastat vana';
 }
 echo '<br />';
+
+$sokolaad = 'Kalev';
+switch ($sokolaad){
+    case 'Kalev';
+        echo 'Super sokolaad';
+        break;
+    case 'Kinder';
+        echo 'Laste lemmik';
+        break;
+    default:
+        echo 'Sobib kui muud pole';
+        break;
+}
+echo'<br />';
+$pidu = 'halb';
+$pidutseme = ($pidu == 'hea') ? 'lähme peole' : 'isuteme kodus';
+echo $pidutseme. '<br />';
