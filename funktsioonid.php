@@ -33,3 +33,17 @@ function looTabel($ridadeArv, $veerudeArv) {
     echo '</tabel>';
 }
 looTabel(5, 7);
+
+
+
+function tabelTekst($sona1, $sona2, $sona3, $sona4){
+    echo'<tabel border="1">';
+    for ($reaNumber = 1; $reaNumber <=4; $reaNumber++){
+        echo '<tr>';
+            echo '<td>';
+                echo ${'sona'.$reaNumber};
+            echo '</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+}
