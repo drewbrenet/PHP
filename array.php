@@ -90,3 +90,4 @@ function mitteDubleeri($massiiv){
 }
 mitteDubleeri(array(1, 1, 1, 2, 2, 2, 2, 3));
 echo '<hr/>';
+echo '<br />';
