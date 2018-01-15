@@ -29,6 +29,15 @@ class tabel
         array_push($this->tabeliSisu, $rida);
         return true;
     }
+
+    function lisaReaKirjeldusega($ridaKirjeldusega){
+        $rida = array();
+        foreach ($this->pealkirjad as $pealkiri){
+            $rida[] = $ridaKirjeldusega[$pealkiri];
+        }
+        array_push($this->tabeliSisu, $rida);
+        return true;
+    }
     function prindiTabel(){
         echo '<pre>';
         foreach ($this->pealkirjad as $pealkiri){
