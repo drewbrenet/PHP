@@ -5,7 +5,6 @@
  * Date: 15.01.2018
  * Time: 9:28
  */
-
 class tekst
 {
     // klassi omadus(ed)
@@ -17,7 +16,7 @@ class tekst
     /**
      * tekst constructor.
      */
-    public function __construct($s)
+    public function __construct($s = '')
     {
         $this->maaraTekst($s);
     }
@@ -25,7 +24,8 @@ class tekst
     function maaraTekst($s){
         $this->sone = $s;
     }
-    function pridniTekst(){
-        echo $this->sone.'<br/>';
+    // teksti väljastamine
+    function prindiTekst(){
+        echo $this->sone.'<br />';
     }
 }

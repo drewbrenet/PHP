@@ -8,9 +8,10 @@
 
 require_once 'tekst.php';
 // loome reaalse objekti tekst class abil
-$minuTekst = new tekst('Tere Maailm!');
+$minuTekst = new tekst();
 // teostame testvaade antud objektist
 echo '<pre>';
 print_r($minuTekst);
 echo '</pre>';
-$minuTekst->pridniTekst();
+// väljastame objekti sone väärtus
+$minuTekst->prindiTekst();
