@@ -6,6 +6,7 @@
  * Time: 12:25
  */
 
+
 class tabel
 {
     // klassi muutujad
@@ -29,7 +30,9 @@ class tabel
         array_push($this->tabeliSisu, $rida);
         return true;
     }
-
+    /*
+     * Koosta funktsioon nimega lisaReaKirjeldusega
+     * $tabel->lisaReaKirjeldusega(array('a'=>2, 'c'=>5, 'b'=>0));*/
     function lisaReaKirjeldusega($ridaKirjeldusega){
         $rida = array();
         foreach ($this->pealkirjad as $pealkiri){
